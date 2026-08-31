@@ -52,8 +52,8 @@ const int8_t dBmCorrTable[7] = {
 const char *VfoStateStr[] = {
        [VFO_STATE_NORMAL]="",
        [VFO_STATE_BUSY]="BUSY",
-       [VFO_STATE_BAT_LOW]="BAT LOW",
-       [VFO_STATE_TX_DISABLE]="TX DISABLE",
+       [VFO_STATE_BAT_LOW]="SARJ AZ",
+       [VFO_STATE_TX_DISABLE]="TX YASAK",
        [VFO_STATE_TIMEOUT]="TIMEOUT",
        [VFO_STATE_ALARM]="ALARM",
        [VFO_STATE_VOLTAGE_HIGH]="VOLT HIGH"
@@ -312,15 +312,15 @@ void UI_DisplayMain(void)
 	UI_DisplayClear();
 
 	if(gLowBattery && !gLowBatteryConfirmed) {
-		UI_DisplayPopup("LOW BATTERY");
+		UI_DisplayPopup("ŞARJ EDIN");
 		ST7565_BlitFullScreen();
 		return;
 	}
 
 	if (gEeprom.KEY_LOCK && gKeypadLocked > 0)
 	{	// tell user how to unlock the keyboard
-		UI_PrintString("Long press #", 0, LCD_WIDTH, 1, 8);
-		UI_PrintString("to unlock",    0, LCD_WIDTH, 3, 8);
+		UI_PrintString("Acmak Icin", 0, LCD_WIDTH, 1, 8);
+		UI_PrintString("Uzun Bas #",    0, LCD_WIDTH, 3, 8);
 		ST7565_BlitFullScreen();
 		return;
 	}
