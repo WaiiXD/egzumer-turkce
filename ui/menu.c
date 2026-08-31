@@ -39,63 +39,63 @@
 
 const t_menu_item MenuList[] =
 {
-//   text,     voice ID,                               menu ID
-	{"Atlama",   VOICE_ID_FREQUENCY_STEP,                MENU_STEP          },
-	{"Tx Gucu",  VOICE_ID_POWER,                         MENU_TXP           }, // was "TXP"
+//  text,      voice ID,                               menu ID
+	{"Adim",   VOICE_ID_FREQUENCY_STEP,                MENU_STEP          },
+	{"TxGucu", VOICE_ID_POWER,                         MENU_TXP           }, // was "TXP"
 	{"RxDCS",  VOICE_ID_DCS,                           MENU_R_DCS         }, // was "R_DCS"
 	{"RxCTCS", VOICE_ID_CTCSS,                         MENU_R_CTCS        }, // was "R_CTCS"
 	{"TxDCS",  VOICE_ID_DCS,                           MENU_T_DCS         }, // was "T_DCS"
 	{"TxCTCS", VOICE_ID_CTCSS,                         MENU_T_CTCS        }, // was "T_CTCS"
 	{"TxODir", VOICE_ID_TX_OFFSET_FREQUENCY_DIRECTION, MENU_SFT_D         }, // was "SFT_D"
 	{"TxOffs", VOICE_ID_TX_OFFSET_FREQUENCY,           MENU_OFFSET        }, // was "OFFSET"
-	{"Gen/Dar",    VOICE_ID_CHANNEL_BANDWIDTH,             MENU_W_N           },
+	{"GenDar", VOICE_ID_CHANNEL_BANDWIDTH,             MENU_W_N           },
 	{"Karist", VOICE_ID_SCRAMBLER_ON,                  MENU_SCR           }, // was "SCR"
 	{"MesgKL", VOICE_ID_BUSY_LOCKOUT,                  MENU_BCL           }, // was "BCL"
 	{"Kompan", VOICE_ID_INVALID,                       MENU_COMPAND       },
-	{"Mod", VOICE_ID_INVALID,                       MENU_AM            }, // was "AM"
-	{"TarEkl1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
-	{"TarEkl2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
-	{"KnlKayt", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
+	{"Modul",  VOICE_ID_INVALID,                       MENU_AM            }, // was "AM"
+	{"TrEkl1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
+	{"TrEkl2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
+	{"KnlKyt", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
 	{"KnlSil", VOICE_ID_DELETE_CHANNEL,                MENU_DEL_CH        }, // was "DEL-CH"
 	{"KnlAdi", VOICE_ID_INVALID,                       MENU_MEM_NAME      },
 
-	{"Tarlist",  VOICE_ID_INVALID,                       MENU_S_LIST        },
-	{"Tarlist1", VOICE_ID_INVALID,                       MENU_SLIST1        },
-	{"Tarlist2", VOICE_ID_INVALID,                       MENU_SLIST2        },
-	{"Tardvm", VOICE_ID_INVALID,                       MENU_SC_REV        },
+	{"TrList", VOICE_ID_INVALID,                       MENU_S_LIST        },
+	{"TrLst1", VOICE_ID_INVALID,                       MENU_SLIST1        },
+	{"TrLst2", VOICE_ID_INVALID,                       MENU_SLIST2        },
+	{"TarDvm", VOICE_ID_INVALID,                       MENU_SC_REV        },
 #ifdef ENABLE_NOAA
 	{"NOAA-S", VOICE_ID_INVALID,                       MENU_NOAA_S        },
 #endif
-	{"F1 Kisa",    VOICE_ID_INVALID,                    MENU_F1SHRT        },
-	{"F1 Uzun",    VOICE_ID_INVALID,                    MENU_F1LONG        },
-	{"F2 Kisa",    VOICE_ID_INVALID,                    MENU_F2SHRT        },
-	{"F2 Uzun",    VOICE_ID_INVALID,                    MENU_F2LONG        },
-	{"M Uzun",    VOICE_ID_INVALID,                    MENU_MLONG         },
+	{"F1Kisa", VOICE_ID_INVALID,                       MENU_F1SHRT        },
+	{"F1Uzun", VOICE_ID_INVALID,                       MENU_F1LONG        },
+	{"F2Kisa", VOICE_ID_INVALID,                       MENU_F2SHRT        },
+	{"F2Uzun", VOICE_ID_INVALID,                       MENU_F2LONG        },
+	{"M Uzun", VOICE_ID_INVALID,                       MENU_MLONG         },
 
 	{"TusKlt", VOICE_ID_INVALID,                       MENU_AUTOLK        }, // was "AUTOLk"
-	{"TxZaman", VOICE_ID_TRANSMIT_OVER_TIME,            MENU_TOT           }, // was "TOT"
+	{"TxSure", VOICE_ID_TRANSMIT_OVER_TIME,            MENU_TOT           }, // was "TOT"
 	{"PilTsr", VOICE_ID_SAVE_MODE,                     MENU_SAVE          }, // was "SAVE"
-	{"Mic",    VOICE_ID_INVALID,                       MENU_MIC           },
+	{"Mikrof", VOICE_ID_INVALID,                       MENU_MIC           },
 #ifdef ENABLE_AUDIO_BAR
-	{"MicBar", VOICE_ID_INVALID,                       MENU_MIC_BAR       },
+	{"MikBar", VOICE_ID_INVALID,                       MENU_MIC_BAR       },
 #endif
 	{"KnlMod", VOICE_ID_INVALID,                       MENU_MDF           }, // was "MDF"
-	{"AcilisMSJ", VOICE_ID_INVALID,                       MENU_PONMSG        },
-	{"PilMod", VOICE_ID_INVALID,                       MENU_BAT_TXT       },
-	{"Isikzaman", VOICE_ID_INVALID,                       MENU_ABR           }, // was "ABR"
-	{"Isikmin",  VOICE_ID_INVALID,                       MENU_ABR_MIN       },
-	{"Isikmax",  VOICE_ID_INVALID,                       MENU_ABR_MAX       },
-	{"IsikTRX", VOICE_ID_INVALID,                       MENU_ABR_ON_TX_RX  },
-	{"TusSes",   VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
+	{"AclMsg", VOICE_ID_INVALID,                       MENU_PONMSG        },
+	{"PilTip", VOICE_ID_INVALID,                       MENU_BAT_TXT       },
+	{"IsikSr", VOICE_ID_INVALID,                       MENU_ABR           }, // was "ABR"
+	{"IsikMn", VOICE_ID_INVALID,                       MENU_ABR_MIN       },
+	{"IsikMx", VOICE_ID_INVALID,                       MENU_ABR_MAX       },
+	{"IskTRX", VOICE_ID_INVALID,                       MENU_ABR_ON_TX_RX  },
+	{"TusSes", VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
 #ifdef ENABLE_VOICE
-	{"SesReh",  VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
+	{"SesReh", VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
 #endif
 	{"Roger",  VOICE_ID_INVALID,                       MENU_ROGER         },
 	{"STE",    VOICE_ID_INVALID,                       MENU_STE           },
 	{"RP STE", VOICE_ID_INVALID,                       MENU_RP_STE        },
-	{"1 Cagri", VOICE_ID_INVALID,                       MENU_1_CALL        },
+	{"1Cagri", VOICE_ID_INVALID,                       MENU_1_CALL        },
 #ifdef ENABLE_ALARM
-	{"AlarmMOD", VOICE_ID_INVALID,                       MENU_AL_MOD        },
+	{"AlrmTp", VOICE_ID_INVALID,                       MENU_AL_MOD        },
 #endif
 #ifdef ENABLE_DTMF_CALLING
 	{"ANI ID", VOICE_ID_ANI_CODE,                      MENU_ANI_ID        },
@@ -103,17 +103,17 @@ const t_menu_item MenuList[] =
 	{"UP Kod", VOICE_ID_INVALID,                       MENU_UPCODE        },
 	{"DW KOD", VOICE_ID_INVALID,                       MENU_DWCODE        },
 	{"PTT ID", VOICE_ID_INVALID,                       MENU_PTT_ID        },
-	{"D SES",   VOICE_ID_INVALID,                       MENU_D_ST          },
+	{"D SES",  VOICE_ID_INVALID,                       MENU_D_ST          },
 #ifdef ENABLE_DTMF_CALLING
-    {"D Yanit", VOICE_ID_INVALID,                       MENU_D_RSP         },
-	{"D Bekle", VOICE_ID_INVALID,                       MENU_D_HOLD        },
+	{"D-Yant", VOICE_ID_INVALID,                       MENU_D_RSP         },
+	{"D-Bekl", VOICE_ID_INVALID,                       MENU_D_HOLD        },
 #endif
-	{"D Gecik", VOICE_ID_INVALID,                       MENU_D_PRE         },
+	{"D-Gec",  VOICE_ID_INVALID,                       MENU_D_PRE         },
 #ifdef ENABLE_DTMF_CALLING
-	{"D Coz", VOICE_ID_INVALID,                       MENU_D_DCD         },
-	{"D Liste", VOICE_ID_INVALID,                       MENU_D_LIST        },
+	{"D Coz",  VOICE_ID_INVALID,                       MENU_D_DCD         },
+	{"D-List", VOICE_ID_INVALID,                       MENU_D_LIST        },
 #endif
-	{"D Canli", VOICE_ID_INVALID,                       MENU_D_LIVE_DEC    }, // live DTMF decoder
+	{"D-Canl", VOICE_ID_INVALID,                       MENU_D_LIVE_DEC    }, // live DTMF decoder
 #ifdef ENABLE_AM_FIX
 	{"AM Fix", VOICE_ID_INVALID,                       MENU_AM_FIX        },
 #endif
@@ -121,8 +121,8 @@ const t_menu_item MenuList[] =
 	{"VOX",    VOICE_ID_VOX,                           MENU_VOX           },
 #endif
 	{"PilVlt", VOICE_ID_INVALID,                       MENU_VOL           }, // was "VOL"
-	{"DinleMOD", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
-	{"Sustur",    VOICE_ID_SQUELCH,                       MENU_SQL           },
+	{"CftDin", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
+	{"Sustur", VOICE_ID_SQUELCH,                       MENU_SQL           },
 
 	// hidden menu items from here on
 	// enabled if pressing both the PTT and upper side button at power-on
@@ -135,8 +135,8 @@ const t_menu_item MenuList[] =
 #ifdef ENABLE_F_CAL_MENU
 	{"FrCali", VOICE_ID_INVALID,                       MENU_F_CALI        }, // reference xtal calibration
 #endif
-	{"PilKalibre", VOICE_ID_INVALID,                       MENU_BATCAL        }, // battery voltage calibration
-	{"PilTip", VOICE_ID_INVALID,                       MENU_BATTYP        }, // battery type 1600/2200mAh
+	{"PilKal", VOICE_ID_INVALID,                       MENU_BATCAL        }, // battery voltage calibration
+	{"PilTyp", VOICE_ID_INVALID,                       MENU_BATTYP        }, // battery type 1600/2200mAh
 	{"Reset",  VOICE_ID_INITIALISATION,                MENU_RESET         }, // might be better to move this to the hidden menu items ?
 
 	{"",       VOICE_ID_INVALID,                       0xff               }  // end of list - DO NOT delete or move this this
@@ -144,16 +144,16 @@ const t_menu_item MenuList[] =
 
 const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_F_LOCK;
 
-const char gSubMenu_TXP[][7] =
+const char gSubMenu_TXP[3][5] =
 {
-	"DUSUK",
+	"DUSK",
 	"ORTA",
-	"YUKSEK"
+	"YUK"
 };
 
 const char gSubMenu_SFT_D[][4] =
 {
-	"OFF",
+	"KPL",
 	"+",
 	"-"
 };
@@ -164,15 +164,15 @@ const char gSubMenu_W_N[][7] =
 	"DAR"
 };
 
-const char gSubMenu_OFF_ON[][7] =
+const char gSubMenu_OFF_ON[2][4] =
 {
-	"KAPALI",
-	"ACIK"
+	"KPL",
+	"AC"
 };
 
-const char gSubMenu_SAVE[][7] =
+const char gSubMenu_SAVE[5][4] =
 {
-	"KAPALI",
+	"KPL",
 	"1:1",
 	"1:2",
 	"1:3",
@@ -197,15 +197,15 @@ const char gSubMenu_TOT[][7] =
 const char* const gSubMenu_RXMode[] =
 {
 	"SADECE\nANA", 		// TX and RX on main only
-	"CIFT RX\nTX", // Watch both and respond
-	"CAPRAZ\nBANT", 		// TX on main, RX on secondary
+	"CIFT RX\nTX",      // Watch both and respond
+	"CAPRAZ\nBANT", 	// TX on main, RX on secondary
 	"ANA TX\nCIFT RX" 	// always TX on main, but RX on both
 };
 
 #ifdef ENABLE_VOICE
-	const char gSubMenu_VOICE[][7] =
+	const char gSubMenu_VOICE[3][4] =
 	{
-		"KAPALI",
+		"KPL",
 		"CIN",
 		"ING"
 	};
@@ -222,7 +222,7 @@ const char* const gSubMenu_MDF[] =
 {
 	"FREKANS",
 	"KANAL\nNO",
-	"NAME",
+	"ISIM",
 	"ISIM\n+\nFREKANS"
 };
 
@@ -246,7 +246,7 @@ const char gSubMenu_D_RSP[][11] =
 
 const char* const gSubMenu_PTT_ID[] =
 {
-	"KAPALI",
+	"KPL",
 	"UP KOD",
 	"DOWN KOD",
 	"UP+DOWN\nKOD",
@@ -258,20 +258,20 @@ const char gSubMenu_PONMSG[][8] =
 	"FULL",
 	"MESAJ",
 	"VOLTAJ",
-	"KAPALI"
+	"KPL"
 };
 
-const char gSubMenu_ROGER[][7] =
+const char gSubMenu_ROGER[3][6] =
 {
-	"KAPALI",
+	"KPL",
 	"ROGER",
 	"MDC"
 };
 
-const char gSubMenu_RESET[][5] =
+const char gSubMenu_RESET[2][4] =
 {
 	"VFO",
-	"HPSI"
+	"TUM"
 };
 
 const char * const gSubMenu_F_LOCK[] =
@@ -288,7 +288,7 @@ const char * const gSubMenu_F_LOCK[] =
 
 const char gSubMenu_BACKLIGHT[][7] =
 {
-	"KAPALI",
+	"KPL",
 	"5 sn",
 	"10 sn",
 	"20 sn",
@@ -298,9 +298,9 @@ const char gSubMenu_BACKLIGHT[][7] =
 	"ACIK"
 };
 
-const char gSubMenu_RX_TX[][7] =
+const char gSubMenu_RX_TX[4][6] =
 {
-	"KAPALI",
+	"KPL",
 	"TX",
 	"RX",
 	"TX/RX"
@@ -308,7 +308,7 @@ const char gSubMenu_RX_TX[][7] =
 
 const char gSubMenu_BAT_TXT[][8] =
 {
-	"KAPALI",
+	"KPL",
 	"VOLTAJ",
 	"YUZDE"
 };
@@ -321,7 +321,7 @@ const char gSubMenu_BATTYP[][9] =
 
 const char gSubMenu_SCRAMBLER[][7] =
 {
-	"KAPALI",
+	"KPL",
 	"2600Hz",
 	"2700Hz",
 	"2800Hz",
@@ -336,34 +336,34 @@ const char gSubMenu_SCRAMBLER[][7] =
 
 const t_sidefunction gSubMenu_SIDEFUNCTIONS[] =
 {
-	{"KAPALI",			ACTION_OPT_NONE},
+	{"KPL",             ACTION_OPT_NONE},
 #ifdef ENABLE_FLASHLIGHT
-	{"FENER",	ACTION_OPT_FLASHLIGHT},
+	{"FENER",           ACTION_OPT_FLASHLIGHT},
 #endif
-	{"GUC",			ACTION_OPT_POWER},
-	{"DINLE",			ACTION_OPT_MONITOR},
-	{"TARA",			ACTION_OPT_SCAN},
+	{"GUC",             ACTION_OPT_POWER},
+	{"DINLE",           ACTION_OPT_MONITOR},
+	{"TARA",            ACTION_OPT_SCAN},
 #ifdef ENABLE_VOX
-	{"VOX",				ACTION_OPT_VOX},
+	{"VOX",             ACTION_OPT_VOX},
 #endif
 #ifdef ENABLE_ALARM
-	{"ALARM",			ACTION_OPT_ALARM},
+	{"ALARM",           ACTION_OPT_ALARM},
 #endif
 #ifdef ENABLE_FMRADIO
-	{"FM RADYO",		ACTION_OPT_FM},
+	{"FM RADYO",        ACTION_OPT_FM},
 #endif
 #ifdef ENABLE_TX1750
-	{"1750HZ",			ACTION_OPT_1750},
+	{"1750HZ",          ACTION_OPT_1750},
 #endif
-	{"TUS\nKILIT",	ACTION_OPT_KEYLOCK},
-	{"GECIS\nVFO",		ACTION_OPT_A_B},
-	{"VFO/MR",			ACTION_OPT_VFO_MR},
-	{"DEGIS\nBANT",	ACTION_OPT_SWITCH_DEMODUL},
+	{"TUS\nKILIT",      ACTION_OPT_KEYLOCK},
+	{"GECIS\nVFO",      ACTION_OPT_A_B},
+	{"VFO/MR",          ACTION_OPT_VFO_MR},
+	{"DEGIS\nBANT",     ACTION_OPT_SWITCH_DEMODUL},
 #ifdef ENABLE_BLMIN_TMP_OFF
-	{"BLMIN\nTMP OFF",  ACTION_OPT_BLMIN_TMP_OFF}, 		//BackLight Minimum Temporay OFF
+	{"BLMIN\nTMP OFF",  ACTION_OPT_BLMIN_TMP_OFF},
 #endif
 #ifdef ENABLE_SPECTRUM
-	{"SPEKTRUM",         ACTION_OPT_SPECTRUM}
+	{"SPEKTRUM",        ACTION_OPT_SPECTRUM}
 #endif
 };
 
@@ -389,17 +389,17 @@ uint8_t UI_MENU_GetMenuIdx(uint8_t id)
 int32_t gSubMenuSelection;
 
 // edit box
-char    edit_original[17]; // a copy of the text before editing so that we can easily test for changes/difference
+char    edit_original[17];
 char    edit[17];
 int     edit_index;
 
 void UI_DisplayMenu(void)
 {
-	const unsigned int menu_list_width = 6; // max no. of characters on the menu list (left side)
+	const unsigned int menu_list_width = 6;
 	const unsigned int menu_item_x1    = (8 * menu_list_width) + 2;
 	const unsigned int menu_item_x2    = LCD_WIDTH - 1;
 	unsigned int       i;
-	char               String[64];  // bigger cuz we can now do multi-line in one string (use '\n' char)
+	char               String[64];
 
 #ifdef ENABLE_DTMF_CALLING
 	char               Contact[16];
@@ -408,85 +408,68 @@ void UI_DisplayMenu(void)
 	UI_DisplayClear();
 
 #ifndef ENABLE_CUSTOM_MENU_LAYOUT
-		// original menu layout
 	for (i = 0; i < 3; i++)
 		if (gMenuCursor > 0 || i > 0)
 			if ((gMenuListCount - 1) != gMenuCursor || i != 2)
 				UI_PrintString(MenuList[gMenuCursor + i - 1].name, 0, 0, i * 2, 8);
 
-	// invert the current menu list item pixels
 	for (i = 0; i < (8 * menu_list_width); i++)
 	{
 		gFrameBuffer[2][i] ^= 0xFF;
 		gFrameBuffer[3][i] ^= 0xFF;
 	}
 
-	// draw vertical separating dotted line
 	for (i = 0; i < 7; i++)
 		gFrameBuffer[i][(8 * menu_list_width) + 1] = 0xAA;
 
-	// draw the little sub-menu triangle marker
 	if (gIsInSubMenu)
 		memcpy(gFrameBuffer[0] + (8 * menu_list_width) + 1, BITMAP_CurrentIndicator, sizeof(BITMAP_CurrentIndicator));
 
-	// draw the menu index number/count
 	sprintf(String, "%2u.%u", 1 + gMenuCursor, gMenuListCount);
-
 	UI_PrintStringSmallNormal(String, 2, 0, 6);
 
 #else
-	{	// new menu layout .. experimental & unfinished
-		const int menu_index = gMenuCursor;  // current selected menu item
+	{
+		const int menu_index = gMenuCursor;
 		i = 1;
 
 		if (!gIsInSubMenu) {
 			while (i < 2)
-			{	// leading menu items - small text
+			{
 				const int k = menu_index + i - 2;
 				if (k < 0)
-					UI_PrintStringSmallNormal(MenuList[gMenuListCount + k].name, 0, 0, i);  // wrap-a-round
+					UI_PrintStringSmallNormal(MenuList[gMenuListCount + k].name, 0, 0, i);
 				else if (k >= 0 && k < (int)gMenuListCount)
 					UI_PrintStringSmallNormal(MenuList[k].name, 0, 0, i);
 				i++;
 			}
 
-			// current menu item - keep big n fat
 			if (menu_index >= 0 && menu_index < (int)gMenuListCount)
 				UI_PrintString(MenuList[menu_index].name, 0, 0, 2, 8);
 			i++;
 
 			while (i < 4)
-			{	// trailing menu item - small text
+			{
 				const int k = menu_index + i - 2;
 				if (k >= 0 && k < (int)gMenuListCount)
 					UI_PrintStringSmallNormal(MenuList[k].name, 0, 0, 1 + i);
 				else if (k >= (int)gMenuListCount)
-					UI_PrintStringSmallNormal(MenuList[gMenuListCount - k].name, 0, 0, 1 + i);  // wrap-a-round
+					UI_PrintStringSmallNormal(MenuList[gMenuListCount - k].name, 0, 0, 1 + i);
 				i++;
 			}
 
-			// draw the menu index number/count
 			sprintf(String, "%2u.%u", 1 + gMenuCursor, gMenuListCount);
 			UI_PrintStringSmallNormal(String, 2, 0, 6);
 		}
 		else if (menu_index >= 0 && menu_index < (int)gMenuListCount)
-		{	// current menu item
-//			strcat(String, ":");
+		{
 			UI_PrintString(MenuList[menu_index].name, 0, 0, 0, 8);
-//			UI_PrintStringSmallNormal(String, 0, 0, 0);
 		}
 	}
 #endif
 
-	// **************
-
 	memset(String, 0, sizeof(String));
-
 	bool already_printed = false;
-
-	/* Brightness is set to max in some entries of this menu. Return it to the configured brightness
-	   level the "next" time we enter here.I.e., when we move from one menu to another.
-	   It also has to be set back to max when pressing the Exit key. */
 
 	BACKLIGHT_TurnOn();
 
@@ -497,7 +480,7 @@ void UI_DisplayMenu(void)
 			break;
 
 		case MENU_MIC:
-			{	// display the mic gain in actual dB rather than just an index number
+			{
 				const uint8_t mic = gMicGain_dB2[gSubMenuSelection];
 				sprintf(String, "+%u.%01udB", mic / 2, mic % 2);
 			}
@@ -522,9 +505,9 @@ void UI_DisplayMenu(void)
 		case MENU_R_DCS:
 		case MENU_T_DCS:
 			if (gSubMenuSelection == 0)
-				strcpy(String, "KAPALI");
+				strcpy(String, "KPL");
 			else if (gSubMenuSelection < 105)
-				sprintf(String, "D%03oN", DCS_Options[gSubMenuSelection -   1]);
+				sprintf(String, "D%03oN", DCS_Options[gSubMenuSelection - 1]);
 			else
 				sprintf(String, "D%03oI", DCS_Options[gSubMenuSelection - 105]);
 			break;
@@ -533,7 +516,7 @@ void UI_DisplayMenu(void)
 		case MENU_T_CTCS:
 		{
 			if (gSubMenuSelection == 0)
-				strcpy(String, "KAPALI");
+				strcpy(String, "KPL");
 			else
 				sprintf(String, "%u.%uHz", CTCSS_Options[gSubMenuSelection - 1] / 10, CTCSS_Options[gSubMenuSelection - 1] % 10);
 			break;
@@ -552,12 +535,11 @@ void UI_DisplayMenu(void)
 			else
 			{
 				const char * ascii = INPUTBOX_GetAscii();
-				sprintf(String, "%.3s.%.3s  ",ascii, ascii + 3);
+				sprintf(String, "%.3s.%.3s  ", ascii, ascii + 3);
 				UI_PrintString(String, menu_item_x1, menu_item_x2, 1, 8);
 			}
 
-			UI_PrintString("MHz",  menu_item_x1, menu_item_x2, 3, 8);
-
+			UI_PrintString("MHz", menu_item_x1, menu_item_x2, 3, 8);
 			already_printed = true;
 			break;
 
@@ -578,7 +560,7 @@ void UI_DisplayMenu(void)
 		#ifdef ENABLE_VOX
 			case MENU_VOX:
 				if (gSubMenuSelection == 0)
-					strcpy(String, "KAPALI");
+					strcpy(String, "KPL");
 				else
 					sprintf(String, "%d", gSubMenuSelection);
 				break;
@@ -604,7 +586,7 @@ void UI_DisplayMenu(void)
 			break;
 
 		case MENU_AUTOLK:
-			strcpy(String, (gSubMenuSelection == 0) ? "KAPALI" : "OTO");
+			strcpy(String, (gSubMenuSelection == 0) ? "KPL" : "OTO");
 			break;
 
 		case MENU_COMPAND:
@@ -646,7 +628,7 @@ void UI_DisplayMenu(void)
 			UI_PrintString(String, menu_item_x1, menu_item_x2, 0, 8);
 
 			if (valid && !gAskForConfirmation)
-			{	// show the frequency so that the user knows the channels frequency
+			{
 				const uint32_t frequency = SETTINGS_FetchChannelFrequency(gSubMenuSelection);
 				sprintf(String, "%u.%05u", frequency / 100000, frequency % 100000);
 				UI_PrintString(String, menu_item_x1, menu_item_x2, 4, 8);
@@ -670,20 +652,20 @@ void UI_DisplayMenu(void)
 				const uint32_t frequency = SETTINGS_FetchChannelFrequency(gSubMenuSelection);
 
 				if (!gIsInSubMenu || edit_index < 0)
-				{	// show the channel name
+				{
 					SETTINGS_FetchChannelName(String, gSubMenuSelection);
 					char *pPrintStr = String[0] ? String : "--";
 					UI_PrintString(pPrintStr, menu_item_x1, menu_item_x2, 2, 8);
 				}
 				else
-				{	// show the channel name being edited
+				{
 					UI_PrintString(edit, menu_item_x1, 0, 2, 8);
 					if (edit_index < 10)
-						UI_PrintString("^", menu_item_x1 + (8 * edit_index), 0, 4, 8);  // show the cursor
+						UI_PrintString("^", menu_item_x1 + (8 * edit_index), 0, 4, 8);
 				}
 
 				if (!gAskForConfirmation)
-				{	// show the frequency so that the user knows the channels frequency
+				{
 					sprintf(String, "%u.%05u", frequency / 100000, frequency % 100000);
 					UI_PrintString(String, menu_item_x1, menu_item_x2, 4 + (gIsInSubMenu && edit_index >= 0), 8);
 				}
@@ -721,7 +703,7 @@ void UI_DisplayMenu(void)
 
 		case MENU_RP_STE:
 			if (gSubMenuSelection == 0)
-				strcpy(String, "KAPALI");
+				strcpy(String, "KPL");
 			else
 				sprintf(String, "%d*100ms", gSubMenuSelection);
 			break;
@@ -845,8 +827,7 @@ void UI_DisplayMenu(void)
 	}
 
 	if (!already_printed)
-	{	// we now do multi-line text in a single string
-
+	{
 		unsigned int y;
 		unsigned int lines = 1;
 		unsigned int len   = strlen(String);
@@ -854,30 +835,27 @@ void UI_DisplayMenu(void)
 
 		if (len > 0)
 		{
-			// count number of lines
 			for (i = 0; i < len; i++)
 			{
 				if (String[i] == '\n' && i < (len - 1))
-				{	// found new line char
+				{
 					lines++;
-					String[i] = 0;  // null terminate the line
+					String[i] = 0;
 				}
 			}
 
 			if (lines > 3)
-			{	// use small text
+			{
 				small = true;
 				if (lines > 7)
 					lines = 7;
 			}
 
-			// center vertically'ish
 			if (small)
-				y = 3 - ((lines + 0) / 2);  // untested
+				y = 3 - ((lines + 0) / 2);
 			else
 				y = 2 - ((lines + 0) / 2);
 
-			// draw the text lines
 			for (i = 0; i < len && lines > 0; lines--)
 			{
 				if (small)
@@ -885,11 +863,9 @@ void UI_DisplayMenu(void)
 				else
 					UI_PrintString(String + i, menu_item_x1, menu_item_x2, y, 8);
 
-				// look for start of next line
 				while (i < len && String[i] >= 32)
 					i++;
 
-				// hop over the null term char(s)
 				while (i < len && String[i] < 32)
 					i++;
 
@@ -910,13 +886,11 @@ void UI_DisplayMenu(void)
 			pPrintStr = String;
 		}
 
-		// channel number
 		UI_PrintString(pPrintStr, menu_item_x1, menu_item_x2, 0, 8);
 
 		SETTINGS_FetchChannelName(String, gSubMenuSelection);
 		pPrintStr = String[0] ? String : "--";
 
-		// channel name and scan-list
 		if (gSubMenuSelection < 0 || !gEeprom.SCAN_LIST_ENABLED[i]) {
 			UI_PrintString(pPrintStr, menu_item_x1, menu_item_x2, 2, 8);
 		} else {
@@ -962,8 +936,8 @@ void UI_DisplayMenu(void)
 	     UI_MENU_GetCurrentMenuId() == MENU_MEM_CH   ||
 	     UI_MENU_GetCurrentMenuId() == MENU_MEM_NAME ||
 	     UI_MENU_GetCurrentMenuId() == MENU_DEL_CH) && gAskForConfirmation)
-	{	// display confirmation
-		char *pPrintStr = (gAskForConfirmation == 1) ? "EMINMI?" : "BEKLE!";
+	{
+		char *pPrintStr = (gAskForConfirmation == 1) ? "EMIN MI?" : "BEKLE!";
 		UI_PrintString(pPrintStr, menu_item_x1, menu_item_x2, 5, 8);
 	}
 
