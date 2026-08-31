@@ -50,9 +50,9 @@ void UI_DisplayFM(void)
 	//UI_PrintStringSmallNormal(String, 127 - 4*7, 0, 6);
 
 	if (gAskToSave) {
-		pPrintStr = "SAVE?";
+		pPrintStr = "KAYIT?";
 	} else if (gAskToDelete) {
-		pPrintStr = "DEL?";
+		pPrintStr = "SIL?";
 	} else if (gFM_ScanState == FM_SCAN_OFF) {
 		if (gEeprom.FM_IsMrMode) {
 			sprintf(String, "MR(CH%02u)", gEeprom.FM_SelectedChannel + 1);
@@ -68,10 +68,10 @@ void UI_DisplayFM(void)
 			}
 		}
 	} else if (gFM_AutoScan) {
-		sprintf(String, "A-SCAN(%u)", gFM_ChannelPosition + 1);
+		sprintf(String, "OTO-TARA(%u)", gFM_ChannelPosition + 1);
 		pPrintStr = String;
 	} else {
-		pPrintStr = "M-SCAN";
+		pPrintStr = "M-TARA";
 	}
 
 	UI_PrintString(pPrintStr, 0, 127, 3, 10); // memory, vfo, scan
