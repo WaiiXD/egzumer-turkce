@@ -37,7 +37,7 @@ void UI_DisplayScanner(void)
 		sprintf(String, "FREQ:%u.%05u", gScanFrequency / 100000, gScanFrequency % 100000);
 		pPrintStr = String;
 	} else {
-		pPrintStr = "FREQ:**.*****";
+		pPrintStr = "FREKANS:**.*****";
 	}
 
 	UI_PrintString(pPrintStr, 2, 0, 1, 8);
@@ -55,7 +55,7 @@ void UI_DisplayScanner(void)
 	UI_PrintString(pPrintStr, 2, 0, 3, 8);
 	memset(String, 0, sizeof(String));
 	if (gScannerSaveState == SCAN_SAVE_CHANNEL) {
-		pPrintStr = "SAVE?";
+		pPrintStr = "KAYIT?";
 		Start     = 0;
 		bCentered = 1;
 	} else {
@@ -63,17 +63,17 @@ void UI_DisplayScanner(void)
 		bCentered = 0;
 
 		if (gScannerSaveState == SCAN_SAVE_CHAN_SEL) {
-			strcpy(String, "SAVE:");
+			strcpy(String, "KAYIT:");
 			UI_GenerateChannelStringEx(String + 5, gShowChPrefix, gScanChannel);
 			pPrintStr = String;
 		} else if (gScanCssState < SCAN_CSS_STATE_FOUND) {
-			strcpy(String, "SCAN");
+			strcpy(String, "TARA");
 			memset(String + 4, '.', (gScanProgressIndicator & 7) + 1);
 			pPrintStr = String;
 		} else if (gScanCssState == SCAN_CSS_STATE_FOUND) {
-			pPrintStr = "SCAN CMP.";
+			pPrintStr = "TARA BSRL.";
 		} else {
-			pPrintStr = "SCAN FAIL.";
+			pPrintStr = "TARA FAIL.";
 		}
 	}
 
