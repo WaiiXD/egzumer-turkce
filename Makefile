@@ -212,7 +212,7 @@ endif
 # If there is still no VERSION_STRING we need to make one.
 # It is needed for the firmware packing script
 ifeq (, $(VERSION_STRING))
-	VERSION_STRING := NOGIT
+	VERSION_STRING := TA1EEI
 endif
 #VERSION_STRING := 230930b
 
