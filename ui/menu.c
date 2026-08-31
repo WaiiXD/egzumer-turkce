@@ -51,18 +51,18 @@ const t_menu_item MenuList[] =
 	{"Gen/Dar",    VOICE_ID_CHANNEL_BANDWIDTH,             MENU_W_N           },
 	{"Karist", VOICE_ID_SCRAMBLER_ON,                  MENU_SCR           }, // was "SCR"
 	{"MesgKL", VOICE_ID_BUSY_LOCKOUT,                  MENU_BCL           }, // was "BCL"
-	{"BANT", VOICE_ID_INVALID,                       MENU_COMPAND       },
+	{"Kompan", VOICE_ID_INVALID,                       MENU_COMPAND       },
 	{"Mod", VOICE_ID_INVALID,                       MENU_AM            }, // was "AM"
-	{"TarEkle1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
-	{"TarEkle2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
-	{"Knl Kayt", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
-	{"Knl Sil", VOICE_ID_DELETE_CHANNEL,                MENU_DEL_CH        }, // was "DEL-CH"
-	{"Knl Adi", VOICE_ID_INVALID,                       MENU_MEM_NAME      },
+	{"TarEkl1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
+	{"TarEkl2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
+	{"KnlKayt", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
+	{"KnlSil", VOICE_ID_DELETE_CHANNEL,                MENU_DEL_CH        }, // was "DEL-CH"
+	{"KnlAdi", VOICE_ID_INVALID,                       MENU_MEM_NAME      },
 
 	{"Tarlist",  VOICE_ID_INVALID,                       MENU_S_LIST        },
 	{"Tarlist1", VOICE_ID_INVALID,                       MENU_SLIST1        },
 	{"Tarlist2", VOICE_ID_INVALID,                       MENU_SLIST2        },
-	{"Tardevam", VOICE_ID_INVALID,                       MENU_SC_REV        },
+	{"Tardvm", VOICE_ID_INVALID,                       MENU_SC_REV        },
 #ifdef ENABLE_NOAA
 	{"NOAA-S", VOICE_ID_INVALID,                       MENU_NOAA_S        },
 #endif
@@ -86,9 +86,9 @@ const t_menu_item MenuList[] =
 	{"Isikmin",  VOICE_ID_INVALID,                       MENU_ABR_MIN       },
 	{"Isikmax",  VOICE_ID_INVALID,                       MENU_ABR_MAX       },
 	{"IsikTRX", VOICE_ID_INVALID,                       MENU_ABR_ON_TX_RX  },
-	{"Beep",   VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
+	{"TusSes",   VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
 #ifdef ENABLE_VOICE
-	{"TusSesi",  VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
+	{"SesReh",  VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
 #endif
 	{"Roger",  VOICE_ID_INVALID,                       MENU_ROGER         },
 	{"STE",    VOICE_ID_INVALID,                       MENU_STE           },
@@ -144,7 +144,7 @@ const t_menu_item MenuList[] =
 
 const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_F_LOCK;
 
-const char gSubMenu_TXP[][5] =
+const char gSubMenu_TXP[][7] =
 {
 	"DUSUK",
 	"ORTA",
@@ -153,7 +153,7 @@ const char gSubMenu_TXP[][5] =
 
 const char gSubMenu_SFT_D[][4] =
 {
-	"KAPALI",
+	"OFF",
 	"+",
 	"-"
 };
@@ -164,13 +164,13 @@ const char gSubMenu_W_N[][7] =
 	"DAR"
 };
 
-const char gSubMenu_OFF_ON[][4] =
+const char gSubMenu_OFF_ON[][7] =
 {
 	"KAPALI",
 	"ACIK"
 };
 
-const char gSubMenu_SAVE[][4] =
+const char gSubMenu_SAVE[][7] =
 {
 	"KAPALI",
 	"1:1",
@@ -203,7 +203,7 @@ const char* const gSubMenu_RXMode[] =
 };
 
 #ifdef ENABLE_VOICE
-	const char gSubMenu_VOICE[][4] =
+	const char gSubMenu_VOICE[][7] =
 	{
 		"KAPALI",
 		"CIN",
@@ -261,14 +261,14 @@ const char gSubMenu_PONMSG[][8] =
 	"KAPALI"
 };
 
-const char gSubMenu_ROGER[][6] =
+const char gSubMenu_ROGER[][7] =
 {
 	"KAPALI",
 	"ROGER",
 	"MDC"
 };
 
-const char gSubMenu_RESET[][4] =
+const char gSubMenu_RESET[][5] =
 {
 	"VFO",
 	"HPSI"
@@ -298,7 +298,7 @@ const char gSubMenu_BACKLIGHT[][7] =
 	"ACIK"
 };
 
-const char gSubMenu_RX_TX[][6] =
+const char gSubMenu_RX_TX[][7] =
 {
 	"KAPALI",
 	"TX",
@@ -963,7 +963,7 @@ void UI_DisplayMenu(void)
 	     UI_MENU_GetCurrentMenuId() == MENU_MEM_NAME ||
 	     UI_MENU_GetCurrentMenuId() == MENU_DEL_CH) && gAskForConfirmation)
 	{	// display confirmation
-		char *pPrintStr = (gAskForConfirmation == 1) ? "EMINMISIN?" : "BEKLE!";
+		char *pPrintStr = (gAskForConfirmation == 1) ? "EMINMI?" : "BEKLE!";
 		UI_PrintString(pPrintStr, menu_item_x1, menu_item_x2, 5, 8);
 	}
 
