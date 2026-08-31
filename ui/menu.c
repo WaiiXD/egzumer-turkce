@@ -146,9 +146,9 @@ const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_F_LOCK;
 
 const char gSubMenu_TXP[3][5] =
 {
-	"DUSK",
+	"DSK",
 	"ORTA",
-	"YUK"
+	"YKSK"
 };
 
 const char gSubMenu_SFT_D[][4] =
